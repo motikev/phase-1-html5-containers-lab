@@ -1,101 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Semantic Containers Lab</title>
+    <title>Exceptional Realty Group - Luxury Homes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <header>
+      <h1>Exceptional Realty Group</h1>
+      <nav>
+        <a href="#">About Us</a>
+        <a href="#">Homes</a>
+        <a href="#">Agents</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
 
-    <!-- Use a header tag to wrap the h1 and h2 tags instead of a div-->
-    <div>
-      <h1>Exceptional Header</h1>
-      <h2>Really, it is a great header</h2>
-    </div>
+    <section>
+      <article>
+        <h2>Welcome to our Luxury Homes</h2>
+        <p>Here at Exceptional Realty Group, we specialize in luxury homes for discerning clients. Our homes are in some of the most exclusive neighborhoods in the world, and our expert agents are here to help you find the perfect one.</p>
+        <p>Whether you're looking for a penthouse apartment in the heart of the city, a beachfront mansion, or a sprawling country estate, we have the perfect property for you.</p>
+      </article>
+      
+      <aside>
+        <h4>Contact Us</h4>
+        <p>Phone: 555-555-5555</p>
+        <p>Email: info@exceptionalrg.com</p>
+      </aside>
+    </section>
 
-    <!-- Add a nav tag to wrap these nested links instead of a span-->
-    <span>
-      <a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="products.html">Products</a>
-    </span>
+    <section>
+      <h2>Featured Homes</h2>
+      <article>
+        <h3>The Glass House</h3>
+        <figure>
+          <img src="images/glass-house.jpg" alt="The Glass House">
+          <figcaption>A stunning modern glass house with amazing views</figcaption>
+        </figure>
+        <p>This minimalist masterpiece is a testament to modern architecture. Featuring floor-to-ceiling windows, a rooftop pool, and breathtaking views of the city, this home is perfect for those who appreciate the best of everything.</p>
+        <p>Price: $10,000,000</p>
+      </article>
 
-    <!-- Replace this div with a main tag to wrap the 'main' content of the webpage-->
-    <div>
+      <article>
+        <h3>The Beach House</h3>
+        <figure>
+          <img src="images/beach-house.jpg" alt="The Beach House">
+          <figcaption>A beautiful beachfront home with all the amenities</figcaption>
+        </figure>
+        <p>Wake up every morning to the sound of waves crashing and the smell of salt air. This stunning beach house has everything you need to relax and enjoy life. With a private beach, infinity pool, and outdoor kitchen, you'll never want to leave.</p>
+        <p>Price: $8,000,000</p>
+      </article>
 
-      <!-- Replace this div with a section tag to better describe this portion of content -->
-      <div>
+      <article>
+        <h3>The Country Estate</h3>
+        <figure>
+          <img src="images/country-estate.jpg" alt="The Country Estate">
+          <figcaption>A sprawling country estate with plenty of room to roam</figcaption>
+        </figure>
+        <p>If you're looking for peace and quiet, this country estate is the perfect retreat. With over 100 acres of land, a private lake, and a beautiful farmhouse, you'll have plenty of space to relax and unwind.</p>
+        <p>Price: $12,000,000</p>
+      </article>
+    </section>
 
-        <!-- Wrap the nested img in a figure tag-->
-        <div>
-          <img src="images/intro-pic.jpg" alt="An exceptional living room." title="Welcome to Exceptional Living Rooms">
+    <section>
+      <h2>Contact Us</h2>
+      <form action="http://example.com/process-user.php" method="GET">
+        <label for="owner-name">Owner Name:</label>
+        <input type="text" name="owner-name" id="owner-name" />
+        <label for="dog-name">Dog Name:</label>
+        <input type="text" name="dog-name" id="dog-name" />
+        <label for="favorite-toy">Favorite Toy:</label>
+        <input type="text" name="favorite-toy" id="favorite-toy" />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
 
-          <!-- Wrap this text in a figcaption tag so that it captions the image above-->
-          <span>"An Exceptional Living Room" by Leonardo DaVinci, photograph</span>
-        </div>
-
-        <!-- Turn this div into an article tag-->
-        <div>
-          <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Quae, perferendis nisi nihil debitis aspernatur doloribus quam eveniet quibusdam tempora esse! Repudiandae, assumenda, debitis doloribus ea eius ab at quae totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, inventore aliquid ipsam debitis nulla vitae omnis nemo quisquam? Obcaecati dolor ipsum distinctio reprehenderit aliquid autem ea vel provident voluptas nisi.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus, nobis, tempore recusandae culpa deleniti dignissimos laborum perspiciatis exercitationem obcaecati dolores unde eveniet eius debitis perferendis provident porro. Ipsum, placeat.</p>
-        </div>
-      </div>
-
-      <!-- Replace this div with a second section tag to indicate this is a separate portion of content-->
-      <div>
-
-        <!-- Wrap the nested video content below with figure tags -->
-        <div>
-          <video controls>
-            <source src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.mp4" type="video/mp4">
-            <source src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/real-estate.ogv" type="video/ogg">
-            Your browser does not support HTML5 video. <a href="http://browsehappy.com" target="_blank">Please upgrade your browser</a>.
-          </video>
-
-          <!-- Wrap this text in a figcaption tag so that it captions the video above-->
-          <span>Exceptional Promotional Video - Source: archive.org</span>
-        </div>
-      </div>
-
-      <!-- Replace this div with a third section tag -->
-      <div>
-          <h3>Links</h3>
-          <p>
-            <a href="#" target="_blank">Home Restoration</a><br>
-            <a href="#" target="_blank">Afordable Mortgages</a><br>
-            <a href="#" target="_blank">Professional Moving Crew</a>
-          </p>
-
-          <h3>Follow Us</h3>
-          <p>
-            <a href="#" target="_blank">Youtube</a><br>
-            <a href="#" target="_blank">Facebook</a><br>
-            <a href="#" target="_blank">Twitter</a>
-          </p>
-      </div>
-    </div>
-    <!-- End of main part of webpage -->
-
-    <!-- Convert this last div so that the contact information and copyright are contained within a footer tag-->
-    <div>
-      <h3>Contact</h3>
-      <p>
-        email: <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
-        phone: +1 710 555 1234
-      </p>
-      <h3>Correspondence</h3>
-
-      <!-- Use the address tag to contain the following address-->
-      <div>
-        Exceptional Realty<br>
-        P.O.Box 5555<br>
-        Brooklyn, NY 11201
-      </div>
-
-      <!-- Replace the following div with a details tag -->
-      <div>
-        <!-- Replace the following span with a summary tag -->
-        <span>&copy; 2014 Exceptional Realty.</span>
-        <p>All Rights Reserved.</p>
-      </div>
-    </div>
-
+    <footer>
+      <p>Exceptional Realty Group</p>
+      <p>555-555-5555</p>
+      <p>info@exceptionalrg.com</p>
+    </footer>
   </body>
 </html>
